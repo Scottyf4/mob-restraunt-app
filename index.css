@@ -1,0 +1,311 @@
+/* CSS for header elements */
+
+body {
+    margin: 0;
+    height: 1200px;
+    width: 600px;
+    margin: auto auto;
+  }
+  
+  .nav-container {
+    position: relative;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .header-img {  
+    width: 600px;
+    height: 200px;
+    background-size: 60%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 17px -6px rgba(122, 117, 122, 1);
+  }
+  
+  .header-text {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-align: right;
+  }
+  
+  .header-text h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    margin-top: 0;
+    filter: drop-shadow(2px 2px 2px rgb(12, 12, 12));
+  }
+  
+  .header-text p {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    line-height: 1.5;
+    filter: drop-shadow(2px 2px 2px rgb(12, 12, 12));
+  }
+  
+  /* CSS for menu items */
+  
+  #menu-item {
+    width: 600px;
+    height: auto;
+  }
+  
+  .menuCard {
+    display: flex;
+    justify-content: space-between;
+    margin: 45px;
+    border-bottom: 1px solid #d2d2d2;
+  }
+  
+  .informationContainer {
+    display: flex;
+  }
+  
+  .menuImage {
+    font-size: 50px;
+    margin: 0;
+    margin-right: 30px;
+  }
+  
+  .menuName {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.75rem;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .menuIngredients,
+  .menuPrice {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .menuIngredients {
+    color: #8b8b8b;
+    margin-top: 0;
+  }
+  
+  .btnContainer {
+    position: relative;
+  }
+  
+  .menuBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    margin: auto auto;
+    font-size: 1rem;
+    font-weight: 100;
+    cursor: pointer;
+  }
+  
+  .menuBtn:hover {
+    border: 2px solid #38bdf8;
+    color: #0ea5e9;
+  }
+  
+  /* CSS for order list */
+
+#order-placeholder{
+    text-align: center;
+    margin-top: 0;
+    font-family: "Nanum Gothic", sans-serif;
+    color: #8b8b8b;
+    font-size: 1rem;
+}
+
+
+
+.order-template{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    border-bottom: 1px solid black;
+}
+
+.order-total {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-container {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.order-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.order-items {
+  font-family: "Nanum Gothic", sans-serif;
+  
+}
+
+.items-total {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.orderItemBtn {
+  display: flex;
+}
+
+#remove-btn{
+  margin-left: 15px;
+  font-size: 0.6rem;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #8b8b8b;
+  background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+  
+}
+
+#clearOrder {
+  margin-bottom: 15px;
+  width: 200px;
+  height: 25px;
+  margin-left: 25%;
+  text-align: center;
+  border-radius: 5px;
+  background: #e5e7eb;
+  color: black;
+  
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+#completeOrder {
+  margin-left: 100px;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background: #16DB99;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  color: whitesmoke;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+/* CSS for payment modal */
+
+.modal-container {
+  display: none;
+}
+
+.modal-form > h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.payment-form > input {
+  width: 400px;
+  height: 65px;
+  border-radius: 4px;
+  margin-bottom: 23px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 1px solid #757575;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1rem;
+  padding-left: 20px; 
+}
+
+.paybtn {
+  margin-bottom: 25px;
+  width: 425px;
+  height: 50px;
+  border-radius: 5px;
+  background: #16DB99;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  color: whitesmoke;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.modal-form{
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.order-confirmation {
+  position: relative;
+  width: 450px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  color: #065f46;
+  background-color: #16DB99;
+  
+}
+#confirmationClsBtn{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  margin-left: 15px;
+  font-size: 1.2rem;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 900;
+  color: white;
+  background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
